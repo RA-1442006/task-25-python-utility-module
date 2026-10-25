@@ -1,0 +1,127 @@
+
+############################################################
+     PYTHON UTILITY MODULE - DEMONSTRATION RUN
+############################################################
+
+============================================================
+--- 1. Validation Utilities Demo ---
+============================================================
+
+[is_valid_email]
+  Input: student.intern@example.com     -> Valid: True
+  Input: invalid_email_at_domain        -> Valid: False
+  Input: user@sub.domain.co.in          -> Valid: True
+
+[is_valid_phone] (10-digit Indian Mobile Numbers)
+  Input: 9876543210                -> Valid: True
+  Input: +91 8123456789            -> Valid: True
+  Input: 5432109876                -> Valid: False
+  Input: 98765                     -> Valid: False
+
+[is_strong_password]
+  Input: Weak123                   -> Strong: False
+  Input: StrongPass@2026           -> Strong: True
+  Input: alllowercase#1            -> Strong: False
+  Input: N0SpecialCharHere         -> Strong: False
+
+[is_valid_age] (0 to 120)
+  Input: 21              -> Valid: True
+  Input: 35              -> Valid: True
+  Input: -4              -> Valid: False
+  Input: 150             -> Valid: False
+  Input: twenty          -> Valid: False
+
+============================================================
+--- 2. Formatting Utilities Demo ---
+============================================================
+
+[format_name]
+  Input: '  aarav   sharma  '
+  Output: 'Aarav Sharma'
+
+  Input: 'priya NAIR'
+  Output: 'Priya Nair'
+
+  Input: 'vikramaditya'
+  Output: 'Vikramaditya'
+
+[format_currency]
+  Input: 500             -> Formatted: ₹500.00
+  Input: 15000           -> Formatted: ₹15,000.00
+  Input: 1250000         -> Formatted: ₹12,50,000.00
+  Input: 8765432.75      -> Formatted: ₹87,65,432.75
+  Input: -2500           -> Formatted: -₹2,500.00
+
+[format_date] (Output format: DD-MM-YYYY)
+  Input: 2026-10-25      -> Formatted: 25-10-2026
+  Input: 2026/12/31      -> Formatted: 31-12-2026
+  Input: 15/08/2024      -> Formatted: 15-08-2024
+
+[truncate_text]
+  Max length: 30
+  Original : 'Learning modular Python programming is fun and useful.'
+  Truncated: 'Learning modular Python pro...'
+
+  Max length: 20
+  Original : 'Short note'
+  Truncated: 'Short note'
+
+  Max length: 35
+  Original : 'A very long sentence that needs to be shortened for a preview card.'
+  Truncated: 'A very long sentence that needs ...'
+
+============================================================
+--- 3. Calculation Utilities Demo ---
+============================================================
+
+[calculate_average]
+  Scores: [85, 92, 78, 90, 88]
+  Average Score: 86.6
+
+[calculate_percentage]
+  Obtained: 465 / Total: 500
+  Percentage: 93.0%
+
+[calculate_simple_interest]
+  Principal: ₹50000, Rate: 7.5%, Time: 3 years
+  Calculated Interest: ₹11250.0
+
+[find_max_min]
+  Numbers: [42, 17, 89, 3, 56, -10, 72]
+  Maximum: 89, Minimum: -10
+
+============================================================
+--- 4. File Utilities Demo ---
+============================================================
+
+[file_exists]
+  Checking 'sample_data.txt': True
+
+[read_file]
+  File content preview:
+    | Welcome to the Python Utility Module project!
+    | This sample text file demonstrates file reading, writing, appending, and word counting.
+    | Modular programming helps us organize code into reusable components.
+    | By separating helper functions into a utility module, our main application stays clean and maintainable.
+    | Happy coding!
+
+[count_words_in_file]
+  Total word count in 'sample_data.txt': 45 words
+
+[write_file]
+  Writing to 'demo_output.txt': Success
+
+[append_to_file]
+  Appending to 'demo_output.txt': Success
+
+[Verification of Created File]
+  Content in 'demo_output.txt':
+    | Internship Task: Python Utility Module
+    | Status: Started testing file utilities.
+    | Status Update: All utilities executed and verified successfully!
+  Word count in new file: 18 words
+
+############################################################
+     ALL UTILITY DEMONSTRATIONS COMPLETED SUCCESSFULLY
+############################################################
+

@@ -1,0 +1,5 @@
+Welcome to the Python Utility Module project!
+This sample text file demonstrates file reading, writing, appending, and word counting.
+Modular programming helps us organize code into reusable components.
+By separating helper functions into a utility module, our main application stays clean and maintainable.
+Happy coding!
